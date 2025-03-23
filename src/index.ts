@@ -1,5 +1,5 @@
 import { Transform, TransformCallback } from "stream";
-import * as protobuf from "protobufjs";
+import protobuf from "protobufjs";
 import { DATA_TYPES, WIRE_TYPES, MASKS, TOKENS, ERRORS } from "./constants";
 import RepeatedFieldStreamError from "./errors";
 
@@ -397,4 +397,4 @@ class RepeatedFieldStream<T = unknown> extends Transform {
   }
 }
 
-export default RepeatedFieldStream;
+export { RepeatedFieldStream };

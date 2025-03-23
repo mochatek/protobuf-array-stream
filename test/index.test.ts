@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { Writable } from "stream";
-import RepeatedFieldStream from "../src";
+import { RepeatedFieldStream } from "../src";
 
 // Test message definitions
 const proto = `

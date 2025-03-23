@@ -26,7 +26,7 @@ npm install protobuf-array-stream
 First, you need to load your Protocol Buffer definitions. The library exposes these methods directly from protobufjs for convenience:
 
 ```typescript
-import RepeatedFieldStream from "protobuf-array-stream";
+import { RepeatedFieldStream } from "protobuf-array-stream";
 import { createReadStream } from "fs";
 
 // 1. Load from a .proto file (async)
