@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/protobuf-array-stream.svg)](https://www.npmjs.com/package/protobuf-array-stream)
 [![npm downloads](https://img.shields.io/npm/dm/protobuf-array-stream.svg)](https://www.npmjs.com/package/protobuf-array-stream)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Coverage](https://img.shields.io/badge/coverage-97.63%25-purple)
 
 Stream and decode Protocol Buffer arrays without memory issues. While other libraries need the entire message in memory, this one processes array elements directly from the source stream - making it perfect for large datasets.
 
@@ -127,8 +128,8 @@ The stream emits errors in these cases:
 - Invalid protobuf encoding in input
 
 ```typescript
-stream.on("error", (error) => {
-  console.error("Stream error:", error.message);
+decodeStream.on("error", (error) => {
+  console.error(`${error.name} - ${error.message}`);
 });
 ```
 
