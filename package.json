@@ -1,6 +1,6 @@
 {
   "name": "protobuf-array-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stream and decode Protocol Buffer arrays without memory issues - perfect for processing large datasets",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
